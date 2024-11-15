@@ -24,6 +24,16 @@ function task2() {
 // Write your task 3 code inside this function!
 function task3() {
   console.log("Running task 3");
+  let target = document.querySelector('.box')
+  const newDiv1 = document.createElement("div");
+
+  newDiv1.innerText = "this is text"
+  target.appendChild(newDiv1);
+  newDiv1.classList.add("item","new")
+  const newDiv2 = document.createElement("div");
+  newDiv2.innerText = "this is text"
+  target.insertBefore(newDiv2,target.firstChild)
+  newDiv2.classList.add("item","new")
 }
 
 // Don't change this function
