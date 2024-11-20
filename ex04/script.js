@@ -11,20 +11,31 @@ function task1() {
 
 function task2A() {
   // Write your code in here
-  
+  const colors = document.querySelector("#color-list")
+  Array.from(colors.children).forEach(item =>{
+    console.log(item.innerText);
+  })
 }
 
 function task2B() {
   // Write your code in here
-  let names = document.querySelectorAll("Li")
-let target = document.querySelector("#name-list")
-names.forEach(item => {
+let names = document.querySelector("#name-list")
+let newList = document.createElement("div")
+let task = document.getElementById("task2")
+
+task.append(newList)
+
+Array.from(names.children).forEach(item =>{
   let newEl = document.createElement("li");
-  newEl.innerText = "Hi " +item.innerText;
-  target.appendChild(newEl)
+  newEl.innerText = "Hi " + item.innerText;
+  task.append(newEl)
 })
 }
 
 function task3() {
   // Write your code in here
+let item = document.querySelectorAll('#box flex');
+item.forEach(item =>{
+  
+})
 }
