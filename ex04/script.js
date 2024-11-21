@@ -34,8 +34,8 @@ Array.from(names.children).forEach(item =>{
 
 function task3() {
   // Write your code in here
-let item = document.querySelectorAll('#box flex');
-item.forEach(item =>{
-  
+let txt = document.querySelectorAll('.item > p');
+txt.forEach(item =>{
+  item.style.backgroundColor = "#" + item.innerText
 })
 }
