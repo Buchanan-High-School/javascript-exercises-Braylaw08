@@ -30,16 +30,27 @@ const teachers = [
 function task1() {
     // Create your own object assigned to a variable.
     // console.log your object when this function is run.
+    let person = {
+        "name": "Brayden Lawson",
+        "hobby": "Acting at a hounted house",
+        "role": "paid actor/fire extugisher checker",
+        "Expirience": 3
+    }
+    console.log(person)
 }
 
 function task2() {
     // Write some HTML to create a card display for a person.
     // When you click the button, the data from the `person`
     // object above should be filled in on the page.
+    document.getElementById("name").innerText = "Name: " + person.name
+    document.getElementById("subject").innerText = "Subject: " + person.subject
+    document.getElementById("experience").innerText = "Experience: " + person.experience
 }
 
 function task3() {
     // 1. Use the array of teachers to start a loop.
     // 2. In the loop, add a "role" property to each object as they go through the loop
     // 3. Use a template string to add a sentence about each person into the #task3 container.
+    
 }
