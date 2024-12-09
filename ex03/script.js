@@ -26,7 +26,7 @@ function task3() {
   console.log("Running task 3");
   let target = document.querySelector('.box')
   const newDiv1 = document.createElement("div");
-
+  
   newDiv1.innerText = "this is text"
   target.appendChild(newDiv1);
   newDiv1.classList.add("item","new")
