@@ -1,12 +1,12 @@
-:root {
-    --grey: #B3B6B7;
-    --red: #6F1A07;
-    --dark: #00120B;
+html {
+    color-scheme: dark;
 }
 
-body {
-    background-image: linear-gradient( to bottom right, var(--red), var(--grey),Var(--dark));
-    background-repeat: no-repeat;
+.input-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    caret-color: crimson;
 }
 
 .not-sidebar {
@@ -16,16 +16,19 @@ body {
     font-family: "Indie Flower", cursive;
     font-weight: 400;
     font-style: normal;
+    position: relative;
 }
 
-.sidebar {
-    display: flex;
-    flex-direction: column;
-    align-items: right;
+.product {
+    border: solid grey;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 10px 5px 5px crimson, -1em 0 .4em grey;
 }
 
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 10px 5px 5px grey, -1em 0 .4em crimson;
 }
