@@ -28,7 +28,7 @@ function rps(userInput) {
         alert("Paper! I lost, how?")
     } else if(userInput == "scissors" && compThrow == "scissors") {
         alert("scissors!. A tie, thats impossible.")
-    } else if(userInput == "Rock, paper, or scissors") {
+    } else if(userInput == "rock, paper, or scissors") {
         alert("alright really!")
     } else {
         alert("You were supposed to pick rock, paper, or scissors stupid.")
