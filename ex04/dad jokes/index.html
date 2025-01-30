@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="all">
+    <div id="text">
+        <p></p>
+    </div>
+    <button id="joke">Get dad joke</button>
+    <form id="joke-data" class="stack">
+        <label for="notes">
+            Notes for the joke
+        </label>
+        <input type="hidden" name="jokeId" id="jokeId" class="jokeId">
+        <textarea name="notes" id="notes"></textarea>
+        <label for="score">Rate</label>
+        <input type="number" name="score" id="score" min="1" max="5">
+        <input type="submit" value="save" id="save">
+    </form>
+    <ul class="saved"></ul>
+    </div>
+</body>
+</html>
