@@ -1,0 +1,27 @@
+:root {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+html {
+    background-color: #020202;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+h1 {
+    color: #f5f0f6;
+}
+form {
+    background-color: #f5f0f6;
+    padding: 1em;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    background-color: #7e7f83;
+    padding: 1em;
+}
