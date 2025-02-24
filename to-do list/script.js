@@ -6,7 +6,7 @@ let title = document.querySelector(`#title`)
 let description = document.querySelector(`#description`)
 let due = document.querySelector(`#due`)
 async function request(method, endpoint, data = null) {
-    let userId = btoa("yourLastName:yourSchoolID");
+    let userId = btoa("Lawson:600401");
     const headers = {
       "Content-Type": "application/json",
       Authorization: `Basic ${userId}`,
