@@ -28,28 +28,8 @@ async function request(method, endpoint, data = null) {
   }
   const todoContainer = document.querySelector(`.todo-container`);
   const form = document.querySelector("form");
-  function buildTodo(todo) {
-    return `
-            <li class="todo" data-completed="${todo.completed}">
-              <header>
-                <h2>${todo.title}</h2>
-                <button data-todoid="${todo.id}" class="btn btn-complete" onclick="completeTodo(this)">Done!</button>
-              </header>
-              <div class="todo-body">
-                <p>${todo.description}</p>
-              </div>
-              <footer class="todo-due">
-                <p>${todo.due}</p>
-                <div class="todo-actions">
-                    <button onclick="deleteTodo(this)" class="btn btn-warn" data-todoid="${todo.id}">Delete</button>
-                </div>
-              </footer>
-            </li>
-      `;
-  }
   window.addEventListener("DOMContentLoaded", async function () {
     let result = await request("get", "todo", null);
-    console.log(result.data)
     render(result.data)
   });
   form.addEventListener("submit", (event) => {
@@ -72,6 +52,7 @@ async function request(method, endpoint, data = null) {
         <p>${todo.description}</p>
         <p>${todo.due}</p>
         <button data-todoid="${todo.id}" onclick="deleteTodo(this)">Delete</button>
+        <button data-todoid="${todo.id}" onclick="completeTodo(this)">Complete</button>
         </div>
       `
     })
@@ -79,6 +60,10 @@ async function request(method, endpoint, data = null) {
     async function deleteTodo(button) {
         let todoId = button.dataset.todoid;
         let response = await request(`delete`, `todo/${todoId}`)
-        console.log(response)
         render(response.data)
     }
+    async function completeTodo(button) {
+      let todoId = button.dataset.todoid;
+      let response = await request(`delete`, `todo/${todoId}`)
+      render(response.data)
+  }
