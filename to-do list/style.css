@@ -1,8 +1,11 @@
 :root {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    --dark: #020202;
+    --medium: #7e7f83;
+    --light: #f5f0f6;
 }
 html {
-    background-color: #020202;
+    background-color: var(--dark);
 }
 body {
     display: flex;
@@ -11,10 +14,10 @@ body {
     margin: 0 auto;
 }
 h1 {
-    color: #f5f0f6;
+    color: var(--light);
 }
 form {
-    background-color: #f5f0f6;
+    background-color: var(--light);
     padding: 1em;
 }
 .list {
@@ -22,6 +25,6 @@ form {
     flex-direction: column;
     width: 50%;
     margin: 0 auto;
-    background-color: #7e7f83;
+    background-color: var(--medium);
     padding: 1em;
 }
