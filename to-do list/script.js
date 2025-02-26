@@ -21,8 +21,6 @@ async function request(method, endpoint, data = null) {
     let request = await fetch(`http://10.20.240.46/${endpoint}`, options);
     if (request.ok) {
       let result = await request.json();
-  
-      // Remember to return the data to the function that called for it.
       return result;
     }
   }
