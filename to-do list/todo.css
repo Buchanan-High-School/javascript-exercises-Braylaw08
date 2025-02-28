@@ -1,0 +1,30 @@
+:root {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    --dark: #020202;
+    --medium: #7e7f83;
+    --light: #f5f0f6;
+}
+html {
+    background-color: var(--dark);
+}
+body {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+h1 {
+    color: var(--light);
+}
+form {
+    background-color: var(--light);
+    padding: 1em;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    background-color: var(--medium);
+    padding: 1em;
+}

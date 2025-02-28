@@ -1,0 +1,34 @@
+html {
+    color-scheme: dark;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    caret-color: crimson;
+}
+
+.not-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+}
+
+.product {
+    border: solid grey;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 10px 5px 5px crimson, -1em 0 .4em grey;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 5px 5px grey, -1em 0 .4em crimson;
+}
