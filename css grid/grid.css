@@ -1,16 +1,24 @@
+img {
+    max-width: 100%;
+}
 .grid{
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: repeat(auto, minmax(250px, 1fr));
+    grid-template-columns: [full-start] minmax(1em, 1fr) [main-start] minmax(0, 40em) [main-end] minmax(1em, 1fr) [full-end];
     padding: 1rem;
 }
 .grid >* {
     height: auto;
     border: 1px solid black;
 }
-.oddpro {
-    grid-column: 1/4;
+.post {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: [full-start] minmax(1em, 1fr) [main-start] minmax(0, 40em) [main-end] minmax(1em, 1fr) [full-end];
 }
-.evenpro {
-    grid-column: 3/6;
+.main {
+    grid-column: main;
+}
+.full {
+    grid-column: full;
 }
