@@ -9,7 +9,7 @@ img {
 }
 .grid >* {
     height: auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .post {
     display: grid;
@@ -21,4 +21,19 @@ img {
 }
 .full {
     grid-column: full;
+}
+.right {
+    grid-column: full-end;
+}
+.left {
+    grid-column: full-start;
+}
+.middle {
+    grid-column: main-start;
+}
+html {
+    background-color: rgb(170, 3, 37);
+}
+article {
+    box-shadow: 10px 5px 5px black, -1em 0 .4em grey;
 }
