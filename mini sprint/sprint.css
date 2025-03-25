@@ -3,6 +3,7 @@
     grid-gap: 1rem;
     padding: 1rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .image {
@@ -10,6 +11,10 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 4;
+}
+
+.image img {
+    width: 100%;
 }
 
 .title {
@@ -37,26 +42,26 @@
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 4;
-    grid-row-end: 5;
+    grid-row-end: 6;
 }
 
 .pro2 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 4;
-    grid-row-end: 5;
+    grid-row-end: 6;
 }
 
 .pro3 {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 4;
-    grid-row-end: 5;
+    grid-row-end: 6;
 }
 
 .pro4 {
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 4;
-    grid-row-end: 5;
+    grid-row-end: 6;
 }
