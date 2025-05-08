@@ -1,0 +1,10 @@
+:root {
+    text-align: center;
+    color: white;
+}
+
+html {
+    background-image: url(stainedpaper.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
